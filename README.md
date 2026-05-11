@@ -25,19 +25,21 @@ are called HTTP messages. But more on that later. What's interesting is that eve
 name like fireship or example.com. 
 
 A domain name can be registered by anyone via a registar whose accredit by ICAN, a nonprofit responsible for 
-overseeing name spaces on the internet when you navigate to a domain in a 
-browser it gets routed through the domain name system that Maps these names to an actual IP address on a server 
-somewhere DNS is like the phone book of the internet now when you look at a web page the actual content you see 
-is represented by hypertext markup language most browsers have Dev tools where you can inspect the structure of 
-the HTML at any time to build your own web page you'll want a text editor like vs code an HTML document is just 
-a collect of elements where an element is an opening and closing tag with some content in the middle like a 
-paragraph and heading it also has elements that handle user input like the select and input Elements which are 
-used to build forms in addition elements can have one or more attributes to change their behavior for example 
-an input can have a type like text or number which the browser will render differently to collect the appropriate 
-value but the element that puts the hyper text in HTML is the a tag or anchor it's a link that allows one page to 
-navigate to to a different page based on its URL these elements are nested together in a hierarchy to form the 
-document object model or Dom from the root element a web page is split into two parts the head contains invisible 
-content like metadata and a title then we have the body for the main content that the end user actually sees the 
+overseeing name spaces on the internet. When you navigate to a domain in a 
+browser it gets routed through the domain name system that maps these names to an actual IP address on a server 
+somewhere. DNS is like the phone book of the internet. Now when you look at a web page the actual content you see 
+is represented by hypertext markup language. Most browsers have "dev tools" where you can inspect the structure of 
+the HTML at any time to build your own web page. You'll want a text editor like VS-Code. An HTML document is just 
+a collection of elements, where an element is an opening and closing tag with some content in the middle. Like a 
+paragraph and heading it also has elements that handle user input. Like the select and input Eeements which are 
+used to build forms. 
+
+In addition, elements can have one or more attributes to change their behavior. For example, 
+an input can have a type like "text" or "number". Which the browser will render differently to collect the appropriate 
+value. But the element that puts the hyper text in HTML is the "a" tag or "anchor". It's a link that allows one page to 
+navigate to a different page based on its URL. These elements are nested together in a hierarchy to form the 
+document object model or "DOM". From the root element a web page is split into two parts; the head contains invisible 
+content like metadata and a title. Then we have the body for the main content that the end user actually sees. The 
 reason we wrap everything in tags is to give browsers and Bots hints about the semantic meaning of the web page 
 this allows search engines to display results properly and also helps with accessibility for devices like screen 
 readers that allow anybody regardless of disability to enjoy the content my computer reads me the text Bro smash 
