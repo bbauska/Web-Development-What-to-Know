@@ -131,4 +131,49 @@ with than imperative code that you would normally get with just plain vanilla Ja
 point we've taken a look at the front end stack but now we need to switch gears to the back end 
 starting with node.js which is a serers side runtime based on JavaScript you can run serers side 
 code for web applications and all kinds of different languages but node is the most popular because 
-it relies on the same language as the browser it's also based on the same V8 engine that powers the Chromium browser to run code in a single-threaded non-blocking event Loop this allows node to handle many simultaneous connections quickly and efficiently in addition it allows developers to share work remotely thanks to the node package manager a package is also called a module which is just a file that contains some code with an export statement so it can be used in another file the file can consume a module with an import statement but now we need to think about how to deliver the actual website from the server to the client the classic option is serers side rendering in this approach the client will make a get request for a certain URL every request has an HTTP method and git means you want to retrieve data from a server as opposed to methods like post and Patch where the intent is to modify data the server receives the request and then generates all the HTML on the server and sends it back to the client as a response the response contains a status code like 200 for success or levels 4 and 500 for errors for example if the web page doesn't exist the server will return a 404 status code which you've likely seen before as a web user SSR is extremely popular but in some cases it may not be fast enough another approach is the single page application with this approach the server only renders a shell for the root URL then JavaScript handles the rendering for all other pages on the website the HTML is generated almost entirely client side in the browser making the website feel more like a native iOS or Android app when the app needs more data it still makes an HTTP request but only requests a minimal amount of data as Json which is called a data interchange format that can be understood by any programming language this can result in a great user experience however it can be very difficult for Bots like search engines and social media link previews to understand content on the page this led to another rendering strategy called Static site generation in this case every web page on the site is uploaded to a server in advance allowing Bots to get the information they need a frontend JavaScript framework usually takes over to hydrate the HTML to make it fully interactive and behave like a single page application performance is extremely important and you'll want to use tools like Lighthouse to optimize metrics like first contentful paint and time to interactive now to implement one of these patterns most developers will use a full stack framework like nextjs Ruby on Rails laravel and so on they abstract away many of the more tedious things developers don't want to deal with one of which is module bundlers which are tools like webpack and that take all of your JavaScript CSS and HTML and package it in a way that can actually work in a browser they might also provide a linter like es lint to warn you when your code doesn't follow the proper Style Guidelines oh and I almost forgot you are definitely going to need a database to build a full stack web application because you need somewhere to store your data like data about your users but in order to get that data you'll need to give users a way to log in Via a process called user authentication now before you deploy your code you'll need to test it with a web server there are tools like engine X and A pchy to create an HTTP server but your framework will likely do this for you by serving the files on Local Host which makes your own IP address behave like a remote web server when it comes time to deploy you'll likely use a big cloud provider like AWS most apps are containerized with Docker making them easy to scale Up and Down based on the amount of traffic that they receive there are many tools out there that function as a platform as a service to manage this infrastructure for you in exchange for your money or if you don't want to get locked in with a giant Tech Corporation you might host your app on a decent calized blockchain with web 3 and that's about 1% of what you'll need to know to call yourself a full stack web developer if that seems overwhelming don't worry too much almost nobody knows what the hell they're doing and we all just use Google to figure things out on the Fly congratulations you just passed web development 101 thanks for watching and I will see you in the next one
+it relies on the same language as the browser it's also based on the same V8 engine that powers the 
+Chromium browser to run code in a single-threaded non-blocking event Loop this allows node to 
+handle many simultaneous connections quickly and efficiently in addition it allows developers to 
+share work remotely thanks to the node package manager a package is also called a module which is 
+just a file that contains some code with an export statement so it can be used in another file the 
+file can consume a module with an import statement but now we need to think about how to deliver 
+the actual website from the server to the client the classic option is serers side rendering in 
+this approach the client will make a get request for a certain URL every request has an HTTP 
+method and git means you want to retrieve data from a server as opposed to methods like post and 
+Patch where the intent is to modify data the server receives the request and then generates all 
+the HTML on the server and sends it back to the client as a response the response contains a 
+status code like 200 for success or levels 4 and 500 for errors for example if the web page doesn't 
+exist the server will return a 404 status code which you've likely seen before as a web user SSR is 
+extremely popular but in some cases it may not be fast enough another approach is the single page 
+application with this approach the server only renders a shell for the root URL then JavaScript 
+handles the rendering for all other pages on the website the HTML is generated almost entirely 
+client side in the browser making the website feel more like a native iOS or Android app when the 
+app needs more data it still makes an HTTP request but only requests a minimal amount of data as 
+Json which is called a data interchange format that can be understood by any programming language 
+this can result in a great user experience however it can be very difficult for Bots like search 
+engines and social media link previews to understand content on the page this led to another 
+rendering strategy called Static site generation in this case every web page on the site is 
+uploaded to a server in advance allowing Bots to get the information they need a frontend 
+JavaScript framework usually takes over to hydrate the HTML to make it fully interactive and 
+behave like a single page application performance is extremely important and you'll want to use 
+tools like Lighthouse to optimize metrics like first contentful paint and time to interactive 
+now to implement one of these patterns most developers will use a full stack framework like nextjs 
+Ruby on Rails laravel and so on they abstract away many of the more tedious things developers don't 
+want to deal with one of which is module bundlers which are tools like webpack and that take all of 
+your JavaScript CSS and HTML and package it in a way that can actually work in a browser they might 
+also provide a linter like es lint to warn you when your code doesn't follow the proper Style 
+Guidelines oh and I almost forgot you are definitely going to need a database to build a full stack 
+web application because you need somewhere to store your data like data about your users but in 
+order to get that data you'll need to give users a way to log in Via a process called user 
+authentication now before you deploy your code you'll need to test it with a web server there are 
+tools like engine X and A pchy to create an HTTP server but your framework will likely do this for 
+you by serving the files on Local Host which makes your own IP address behave like a remote web 
+server when it comes time to deploy you'll likely use a big cloud provider like AWS most apps are 
+containerized with Docker making them easy to scale Up and Down based on the amount of traffic that 
+they receive there are many tools out there that function as a platform as a service to manage this 
+infrastructure for you in exchange for your money or if you don't want to get locked in with a giant 
+Tech Corporation you might host your app on a decent calized blockchain with web 3 and that's about 
+1% of what you'll need to know to call yourself a full stack web developer if that seems 
+overwhelming don't worry too much almost nobody knows what the hell they're doing and we all just 
+use Google to figure things out on the Fly congratulations you just passed web development 101 
+thanks for watching and I will see you in the next one
