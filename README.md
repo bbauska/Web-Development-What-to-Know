@@ -1,3 +1,4 @@
+# Web Development
 Web development is the best job in the world. You build on a platform with nearly 5 billion daily 
 active users. All connected together like the neurons of a global super intelligent brain. A system 
 that can cure disease, eliminate poverty, advance science and stuff like that. But mostly it's used 
@@ -110,30 +111,39 @@ declare a variable. A variable that might be reassigned in the future. Uses the 
 that can't be reassigned uses con, it's a dynamically typed language which means no type annotations are necessary. 
 That's not always ideal. So many developers choose Typescript as an alternative to add static typing on top of JavaScript.
 
-Now, one of the most common reasons you would use JavaScript. In the first place, it is used to handle events. Whenever the
-user does something on a web page, the browser emits an event that you can listen to. Like a click Mouse move form input, 
-change, and so on. We can tap into these events using browser APIs like document. Which, in this case, provides 
-a method called query selector. That allows us to grab an element El with a CSS selector. Once we have that element 
-set as a variable we can then assign an event listener to it an event listener is a function that will be called or re-executed anytime the button is clicked the language has a variety of built-in data structures like an array to 
-represent a collection of values but the most fundamental data structure is the object also commonly 
-called a dictionary or hashmap anything that's not a primitive type like a string or number inherits 
-its base functionality from the object class it relies on a technique called prototypal inheritance 
-where an object can be cloned multiple times to create a chain of ancestors where the child inherits 
-the properties and methods of its ancestors this is different from class-based inheritance which is 
-kind of confusing because JavaScript also supports classes however these classes are just syntactic 
-sugar for prototypal inheritance but now we're getting a little too low level most developers don't 
-ever want to have to touch the word prototype so what we do instead is use a front-end framework 
-like react view spelt angular and so on all of these Frameworks do the same thing in a slightly 
-different way which is represent the UI as a tree of components a component can encapsulate HTML 
-CSS and JavaScript into a format that looks like its own custom HTML element most importantly they 
+Now, one of the most common reasons you would use JavaScript. In the first place, it is used to 
+handle events. Whenever the user does something on a web page, the browser emits an event that 
+you can listen to. Like a click Mouse move form input, change, and so on. We can tap into these 
+events using browser APIs like document. Which, in this case, provides a method called query 
+selector. That allows us to grab an element El with a CSS selector. Once we have that element 
+set as a variable we can then assign an event listener to it. An event listener is a function 
+that will be called or re-executed anytime the button is clicked. The language has a variety of 
+built-in data structures like an array to represent a collection of values. 
+
+But the most fundamental 
+data structure is the object. Also commonly called a dictionary or hashmap. Anything that's not a 
+primitive type like a string or number inherits its base functionality from the object class. It 
+relies on a technique called prototypal inheritance, where an object can be cloned multiple times 
+to create a chain of ancestors. Where the child inherits the properties and methods of its 
+ancestors. This is different from class-based inheritance which is kind of confusing because 
+JavaScript also supports classes. However, these classes are just syntactic sugar for prototypal 
+inheritance. But now we're getting a little too low level. Most developers don't ever want to 
+have to touch the word prototype. So what we do instead is use a front-end framework like React 
+view, svelt, angular, and so on. All of these frameworks do the same thing in a slightly different 
+way which is, represent the UI as a tree of components. 
+
+A component can encapsulate HTML, CSS, and JavaScript into a format that looks like its own custom 
+HTML element. Most importantly, they 
 produce declarative code that describes exactly what the UI does and that's much easier to work 
-with than imperative code that you would normally get with just plain vanilla JavaScript at this 
-point we've taken a look at the front end stack but now we need to switch gears to the back end 
-starting with node.js which is a serers side runtime based on JavaScript you can run serers side 
-code for web applications and all kinds of different languages but node is the most popular because 
-it relies on the same language as the browser it's also based on the same V8 engine that powers the 
-Chromium browser to run code in a single-threaded non-blocking event Loop this allows node to 
-handle many simultaneous connections quickly and efficiently in addition it allows developers to 
+with than imperative code that you would normally get with just plain vanilla JavaScript. At this 
+point we've taken a look at the front end stack but now we need to switch gears to the back end. 
+Starting with node.js, which is a server side runtime based on JavaScript. You can run server side 
+code for web applications in all kinds of different languages. 
+
+But node.js is the most popular because 
+it relies on the same language as the browser. It's also based on the same V8 engine that powers the 
+Chromium browser to run code. In a single-threaded, non-blocking event loop, this allows node.js to 
+handle many simultaneous connections quickly and efficiently. In addition it allows developers to 
 share work remotely thanks to the node package manager a package is also called a module which is 
 just a file that contains some code with an export statement so it can be used in another file the 
 file can consume a module with an import statement but now we need to think about how to deliver 
